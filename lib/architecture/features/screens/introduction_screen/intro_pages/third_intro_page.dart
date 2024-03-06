@@ -17,7 +17,6 @@ class ThirdIntroPage extends StatelessWidget {
           child: Image.asset(
             'assets/images/car3.jpg',
             fit: BoxFit.cover,
-            color: Colors.blue,
           ),
         ),
         const SizedBox(
