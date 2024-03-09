@@ -25,7 +25,7 @@ class ThirdIntroPage extends StatelessWidget {
         Text(
           'Are You Considering Your Budget?',
           style: GoogleFonts.poppins(
-            fontSize: 30,
+            fontSize: 24,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -33,7 +33,7 @@ class ThirdIntroPage extends StatelessWidget {
           height: 20,
         ),
         Text(
-          "Don't worry yourself... /nWe sufficiently have the best customer-centric packages just for you....",
+          "Don't worry yourself... \nWe sufficiently have the best customer-centric packages just for you....",
           style: GoogleFonts.poppins(),
         ),
       ],
