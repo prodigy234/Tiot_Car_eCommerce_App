@@ -7,12 +7,14 @@ class ContainerButtonWidget extends StatelessWidget {
       this.buttonColor,
       this.buttonBorder,
       super.key,
-      this.buttonTextColor});
+      this.buttonTextColor,
+      this.icon});
 
   final String buttonName;
   final Color? buttonColor;
   final Border? buttonBorder;
   final Color? buttonTextColor;
+  final IconData? icon;
 
   @override
   Widget build(BuildContext context) {
@@ -24,10 +26,21 @@ class ContainerButtonWidget extends StatelessWidget {
           border: buttonBorder,
           borderRadius: BorderRadius.circular(20),
           color: buttonColor),
-      child: Text(
-        buttonName,
-        style: GoogleFonts.poppins(
-            fontSize: 14, color: buttonTextColor, fontWeight: FontWeight.bold),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(
+            icon,
+            color: Colors.white,
+          ),
+          Text(
+            buttonName,
+            style: GoogleFonts.poppins(
+                fontSize: 14,
+                color: buttonTextColor,
+                fontWeight: FontWeight.bold),
+          ),
+        ],
       ),
     );
   }
