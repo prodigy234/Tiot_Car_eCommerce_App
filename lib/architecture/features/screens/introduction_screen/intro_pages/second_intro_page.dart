@@ -25,7 +25,7 @@ class SecondIntroPage extends StatelessWidget {
         Text(
           'The Best And Highly Durable Cars \n With A Luxurious Blend Of Elegance',
           style: GoogleFonts.poppins(
-            fontSize: 30,
+            fontSize: 24,
             fontWeight: FontWeight.bold,
           ),
         ),

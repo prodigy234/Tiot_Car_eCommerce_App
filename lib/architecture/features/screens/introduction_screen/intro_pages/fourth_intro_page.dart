@@ -25,7 +25,7 @@ class FourthIntroPage extends StatelessWidget {
         Text(
           'The Best E-commerce App \nWith World Class Delivery',
           style: GoogleFonts.poppins(
-            fontSize: 30,
+            fontSize: 24,
             fontWeight: FontWeight.bold,
           ),
         ),
