@@ -43,22 +43,6 @@ class _SignupScreenState extends State<SignupScreen> {
                       color: Colors.amber,
                       fontWeight: FontWeight.bold),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    SizedBox(
-                      height: 60,
-                      width: 60,
-                      child: Text(
-                        'TIOT CAR APP',
-                        style: GoogleFonts.poppins(
-                            fontSize: 40,
-                            color: Colors.amber,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ),
-                  ],
-                ),
                 const SizedBox(
                   height: 30,
                 ),

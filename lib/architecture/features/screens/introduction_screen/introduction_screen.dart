@@ -59,7 +59,7 @@ class _Introduction_ScreenState extends State<Introduction_Screen> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      if (currentPage <= 4 && currentPage == 0) {
+                      if (currentPage < 4 && currentPage == 0) {
                         pageController.nextPage(
                             duration: const Duration(milliseconds: 300),
                             curve: Curves.bounceInOut);

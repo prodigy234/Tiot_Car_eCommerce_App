@@ -26,132 +26,129 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SizedBox(
-                    height: 60,
-                    width: 60,
-                    child: Text(
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
                       'TIOT CAR APP',
                       style: GoogleFonts.poppins(
                           fontSize: 40,
                           color: Colors.amber,
                           fontWeight: FontWeight.bold),
                     ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 30,
-              ),
-              Text(
-                "You Are Welcome",
-                style: GoogleFonts.poppins(
-                    fontSize: 24, fontWeight: FontWeight.bold),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              Text(
-                "You can login or signup for a much better user experience on the app",
-                style: GoogleFonts.poppins(
-                  fontSize: 14,
+                  ],
                 ),
-              ),
-              const SizedBox(
-                height: 30,
-              ),
-              AuthInputTextField(
-                labelText: 'Email',
-                controller: emailController,
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              TextFormField(
-                controller: passwordController,
-                obscureText: true,
-                decoration: InputDecoration(
-                  suffixIcon: const Icon(Icons.visibility_off),
-                  border: const OutlineInputBorder(),
-                  label: const Text('Password'),
-                  labelStyle: GoogleFonts.poppins(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                const SizedBox(
+                  height: 30,
+                ),
+                Text(
+                  "You Are Welcome",
+                  style: GoogleFonts.poppins(
+                      fontSize: 24, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  "You can login or signup for a much better user experience on the app",
+                  style: GoogleFonts.poppins(
+                    fontSize: 14,
                   ),
                 ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              TextFormField(
-                controller: confirmPasswordController,
-                obscureText: true,
-                decoration: InputDecoration(
-                  suffixIcon: const Icon(Icons.visibility_off),
-                  border: const OutlineInputBorder(),
-                  label: const Text('Confirm Password'),
-                  labelStyle: GoogleFonts.poppins(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                const SizedBox(
+                  height: 30,
+                ),
+                AuthInputTextField(
+                  labelText: 'Email',
+                  controller: emailController,
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                TextFormField(
+                  controller: passwordController,
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    suffixIcon: const Icon(Icons.visibility_off),
+                    border: const OutlineInputBorder(),
+                    label: const Text('Password'),
+                    labelStyle: GoogleFonts.poppins(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(
-                height: 30,
-              ),
-              GestureDetector(
-                onTap: () {},
-                child: const ContainerButtonWidget(
-                  buttonName: 'Login',
-                  buttonColor: Colors.black,
+                const SizedBox(
+                  height: 10,
+                ),
+                TextFormField(
+                  controller: confirmPasswordController,
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    suffixIcon: const Icon(Icons.visibility_off),
+                    border: const OutlineInputBorder(),
+                    label: const Text('Confirm Password'),
+                    labelStyle: GoogleFonts.poppins(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: const ContainerButtonWidget(
+                    buttonName: 'Login',
+                    buttonColor: Colors.black,
+                    buttonTextColor: Colors.white,
+                  ),
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      height: 3,
+                      width: 180,
+                      decoration: const BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    const Text('Or'),
+                    Container(
+                      height: 1,
+                      width: 180,
+                      decoration: const BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                const ContainerButtonWidget(
+                  icon: Icons.facebook,
+                  buttonName: 'Continue with facebook',
+                  buttonColor: Colors.blue,
                   buttonTextColor: Colors.white,
                 ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    height: 3,
-                    width: 180,
-                    decoration: const BoxDecoration(
-                      color: Colors.grey,
-                    ),
-                  ),
-                  const Text('Or'),
-                  Container(
-                    height: 1,
-                    width: 180,
-                    decoration: const BoxDecoration(
-                      color: Colors.grey,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              const ContainerButtonWidget(
-                icon: Icons.facebook,
-                buttonName: 'Continue with facebook',
-                buttonColor: Colors.blue,
-                buttonTextColor: Colors.white,
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

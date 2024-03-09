@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:e_commerce_app/architecture/features/screens/introduction_screen/introduction_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
